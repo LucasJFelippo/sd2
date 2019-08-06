@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+Login
+{% endblock %}
+{% block container %}
+    <form action="POST" action="/" class="ls_form">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Login">
+        <input type="number" step="0.1" placeholder="Altura">
+        <input type="number" step="1" placeholder="Idade">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <input type="submit" value="Registrar">
+    </form>
+{% endblock %}
