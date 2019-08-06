@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block header %}
+<a href="logout">Logout</a>
+<a href="listar">Voltar</a>
+{% endblock %}
+{% block main %}
+<form action="alt" method="post">
+    <label>Alterar:</label><br>
+    <label>Codigo: {{ ideia.cod }}</label>
+    <input type="hidden" name="cod" value="{{ ideia.cod }}">
+    <input type="text" name="titulo" placeholder="Titulo" value="{{ ideia.titulo }}"><br>
+    <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição">{{ ideia.titulo }}</textarea><br>
+    <input type="hidden" name="usuario" value="{{ ideia.usuario.cod }}">
+    <input type="submit" value="Alterar">
+</form>
+{% endblock %}

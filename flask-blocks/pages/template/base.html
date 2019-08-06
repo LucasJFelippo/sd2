@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercicio</title>
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}
+                <ul>
+                    <li><a href="./">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./funcionarios">Funcionarios</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./departamentos">Departamentos</a></li>
+                </ul>
+            {% endblock %}
+        </div>
+        {% block main %}{% endblock %}
+        <div id=footer>
+            <h5>Direitos Autorais de Alan & Sia</h5>
+        </div>
+    </body>
+</html>

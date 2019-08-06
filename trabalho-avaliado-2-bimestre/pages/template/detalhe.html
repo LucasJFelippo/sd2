@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block header %}
+<a href="logout">Logout</a>
+<a href="listar">Voltar</a><br>
+{% endblock %}
+{% block main %}
+    <h3>{{ ideia.titulo }}</h3>
+    <h4>Descrição:</h4>
+    <p>{{ ideia.descricao }}</p><br>
+    <h4>Autor: {{ ideia.usuario.nome }}</h4>
+    {% if ideia.usuario.cod == session['cod'] %}
+        <form action="../deletar" method="post">
+            <input type="hidden" name="cod" value="{{ ideia.cod }}">
+            <button type="submit">Deletar</button>
+        </form>
+        <form action="../alterar" method="post">
+            <input type="hidden" name="cod" value="{{ ideia.cod }}">
+            <button type="submit">Alterar</button>
+        </form>
+    {% endif %}
+{% endblock %}
