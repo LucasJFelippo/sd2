@@ -4,8 +4,8 @@
 ```
 Python3
 Flask
-  Mail
-  SQLAlchemy
+  -Mail
+  -SQLAlchemy
 PostgresSQL
 Virtualenv
 ```
