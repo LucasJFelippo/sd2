@@ -1,5 +1,7 @@
 # Software Development II
 
+ Repository for the Software Development II subject of Web Development (IFRS) course.
+
 **Used:**
 ```
 Python3
